@@ -1,0 +1,29 @@
+{
+  "name": "educationsystem",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "nodemon": "nodemon --exec babel-node ./bin/www",
+    "start": "node --max-old-space-size=256 -r babel-register ./bin/www"
+  },
+  "author": "Darren Kang Khai Meng",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "express-async-handler": "^1.1.4",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "mysql2": "^1.6.5",
+    "pug": "2.0.0-beta11",
+    "sequelize": "^5.9.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "nodemon": "^1.19.1",
+    "sequelize-cli": "^5.5.0"
+  }
+}
