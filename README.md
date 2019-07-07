@@ -21,7 +21,10 @@ Install MySQL, if necessary.
 
 Set up a local connection credentials
 ```
-CREATE USER 'your_user'@'localhost' IDENTIFIED WITH mysql_native_password BY 'your_password'; or
+CREATE USER 'your_user'@'localhost' IDENTIFIED WITH mysql_native_password BY 'your_password'; 
+
+or
+
 ALTER USER 'your_user'@'localhost' IDENTIFIED WITH mysql_native_password BY 'your_password'; 
 ```
 Create Database Schema
@@ -58,7 +61,9 @@ npm run migrate
 To start server, run
 ```
 npm start 
+
 or
+
 npm run nodemon
 ```
 
@@ -68,7 +73,7 @@ npm run nodemon
     ```
     npm run initData
     ```
-    * run script
+    run script
     ```
     npm test
     ```
