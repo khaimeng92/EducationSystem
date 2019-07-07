@@ -18,6 +18,7 @@ API endpoints for teachers to perform administrative functions for their student
 # Installation
 ## MySQL
 Install MySQL, if necessary.
+
 Set up a local connection credentials
 ```
 CREATE USER 'your_user'@'localhost' IDENTIFIED WITH mysql_native_password BY 'your_password'; or
@@ -25,15 +26,15 @@ ALTER USER 'your_user'@'localhost' IDENTIFIED WITH mysql_native_password BY 'you
 ```
 Create Database Schema
 ```
-CREATE SCHEMA `edu` ;
+CREATE SCHEMA `your_db_name` ;
 ```
-Modify database config ['[..\db\config\database.json]'](https://github.com/khaimeng92/EducationSystem/blob/master/db/config/database.json) 
+Modify database config [[..\db\config\database.json]](https://github.com/khaimeng92/EducationSystem/blob/master/db/config/database.json) 
 ```
 {
    "development": {
        "username": "your_user",
        "password": "your_password",
-       "database": "education_system",
+       "database": "your_db_name",
        "host": "127.0.0.1",
        "dialect": "mysql",
        "pool": {
@@ -62,15 +63,15 @@ npm run nodemon
 ```
 
 ## Testing
-Option 1 - Unit Test Script
-* preload data before start testing, run
-```
-npm run initData
-```
-* run script
-```
-npm test
-```
+* Option 1 - Unit Test Script
+    preload data before start testing, run
+    ```
+    npm run initData
+    ```
+    * run script
+    ```
+    npm test
+    ```
 
-Option 2 - Postman Collection
+ * Option 2 - Postman Collection
 You can access [this Postman collection](https://www.getpostman.com/collections/19154d6cc8add40bd28b) for some example calls 
