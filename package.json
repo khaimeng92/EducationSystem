@@ -5,7 +5,9 @@
   "scripts": {
     "nodemon": "nodemon --exec babel-node ./bin/www",
     "start": "node --max-old-space-size=256 -r babel-register ./bin/www",
-    "test": "mocha --recursive -r babel-register ./test/unitTest.js"
+    "test": "mocha --recursive -r babel-register ./test/unitTest.js",
+    "migrate": "npx sequelize db:migrate",
+    "initData": "npx sequelize db:seed:all"
   },
   "author": "Darren Kang Khai Meng",
   "dependencies": {
