@@ -3,9 +3,8 @@ import { join } from 'path';
 import cookieParser from 'cookie-parser';
 import logger from 'morgan';
 import { json, urlencoded } from 'body-parser';
-
-import indexRouter from './routes/index';
-import adminRouter from './routes/admin';
+import indexRouter from "./routes/index";
+import adminRouter from "./routes/admin";
 
 var app = express();
 
@@ -19,13 +18,14 @@ app.use(urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(join(__dirname, 'public')));
 
-app.use('/', indexRouter);
-app.use('/api', adminRouter);
+// set router
+app.use("/", indexRouter);
+app.use("/api", adminRouter);
 
 // catch 404 and forward to error handler
-app.use(function(err, req, res, next) {
-  next(err.status);
-}); 
+// app.use(function(err, req, res, next) {
+//   next(err.status);
+// }); 
 
 // error handler
 app.use(function(err, req, res, next) {

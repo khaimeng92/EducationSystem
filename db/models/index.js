@@ -3,7 +3,7 @@ import { basename as _basename, join } from 'path';
 import Sequelize from 'sequelize';
 const basename = _basename(__filename);
 const env = process.env.NODE_ENV || 'development';
-const config = require('../../db/config/database.json')[env];
+const config = require('../config/database.json')[env];
 const db = {};
 
 let sequelize;
