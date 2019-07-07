@@ -3,12 +3,13 @@ API endpoints for teachers to perform administrative functions for their student
 * Backend: NodeJs & ExpressJs
 * Database: MySQL
 * ORM: Sequelize
-* Endpoints: ```
-             POST api/register
-             GET api/commonstudents
-             POST api/suspend
-             POST api/retrievefornotifications
-             ```
+* Endpoints: 
+    ```
+    POST api/register
+    GET api/commonstudents
+    POST api/suspend
+    POST api/retrievefornotifications
+    ```
 # Prerequisite
  1. Express JS
  2. Node JS
