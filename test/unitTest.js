@@ -9,7 +9,7 @@ const should = chai.should();
 chai.use(chaiHttp)
 
 describe('/POST register', () => {
-    it('it sould insert the teacher, students and teacherStudents record. Duplicate data will be ignore!', (done) => {
+    it('it should insert the teacher, students and teacherStudents record. Duplicate data will be ignore!', (done) => {
         const register = {
             "teacher": "teacherDarren@gmail.com",
             "students":[
@@ -41,7 +41,7 @@ describe('/GET commonstudents', () => {
 });
 
 describe('/POST suspend', () => {
-    it('it sould update student.suspended => 1!', (done) => {
+    it('it should update student.suspended => 1!', (done) => {
         const suspend = {
             "student" : "student03@gmail.com"
           };
@@ -57,7 +57,7 @@ describe('/POST suspend', () => {
 });
 
 describe('/POST retrievefornotifications', () => {
-    it('it sould update student.suspended => 1!', (done) => {
+    it('it should get the recipients list! => 1!', (done) => {
         const retrievefornotifications = {
             "teacher":  "teacherken@gmail.com",
             "notification": "Hello students! @student22@gmail.com @student12@gmail.com"
